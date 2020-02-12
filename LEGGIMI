@@ -2,7 +2,7 @@ L'unico utente attivo è (come si evince dal codice del file "authapp.service.ts
   -Nicola
   -123
   
-Attraverso un Rest controller su SpringBoot gestisci la richiesta get.
+Attraverso un Rest controller su SpringBoot gestisco la richiesta get.
 
 package com.maxxolino.webapp.controller;
 
