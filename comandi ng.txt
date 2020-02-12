@@ -1,0 +1,66 @@
+cd <cartella app>
+
+ng serve
+
+ng generate component <nomecomponente> \\all'interno della cartella dell'app
+
+npm install bootstrap --save
+
+<modificare all' interno del file "angular.json" la linea "styles:" con:>
+< "styles": [
+              "src/styles.css",
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+ 		"src/assets/css/open-iconic-bootsrtap.css"
+            ],
+>
+
+npm install jquery --save
+<modificare all' interno del file "angular.json" la linea "scripts:" con:>
+<"scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+		"src/assets/js/main.js"
+            ]
+>
+
+<download "openiconic" per icone>
+<creare in "asstes" le varie cartelle: "css,js,images,fonts">
+
+<service inseriti nella root di base quindi li metto su una cartella per non fare confusione>
+ng generate service  services/authapp
+
+ng generate service services/routeGuard
+<utilizza canactivate di Angular e importa servizio Auth su variabile private "x":"servizio", se this.(Es.variabile=auth).islogged() allora can activate su app-router.>
+
+{path:'welcome/:userid',component : WelcomeComponent, canActivate:[RouteGuardService]},
+
+<per memorizzare sessione:>
+//funzione di autenticazione
+  autentica( UserId, Password){
+    if(UserId==='Nicola'&& Password==='123'){
+      //https://developer.mozilla.org/it/docs/Web/API/Window/sessionStorage
+      sessionStorage.setItem("Utente", UserId);
+      return true;
+    }else{
+      return false;
+
+
+
+
+
+<installa springboot x eclipse e Postman per generare e salvare richieste o Curl>
+<pro di springboot: importa dipendenze in automatico>
+<crea progetto SpringBoot su SpringBootIde e crea PRIMA test Junit e poi la relativa rest controller sul main, usa il test per testare il controller, importa le varie dipendenze per es. "@Getmapping">
+<in quest amaniera sviluppiamo in maniera "TDD", test-driven development>
+
+<ng generate service services/data/salutiData>
+
+< aggiungere a module.ts :import{ HttpClientModule } from '@angular/common/http';>
+<negli import : HttpClientModule>
+
+<comunicazione di angular è sempre asincrona>
+<per test usare @CrossOrigin(origins="http://localhost:4200") altrimenti comunicazioni tra porte diverse non è autorizzata>
+
+< se errore json ricordarsi che per passare stringhe necessari doppi apici, per includerli \">
+
+
+
