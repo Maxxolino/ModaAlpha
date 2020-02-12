@@ -20,7 +20,7 @@ public class SalutiRestContoller
 	@GetMapping(value = "/test")
 	public String getGreetings()
 	{
-		return "Saluti, sono il tuo primo web services";
+		return "Saluti";
 	}
 	@GetMapping(value = "/saluti/{nome}")
 	public String getGreetings(@PathVariable ("nome") String Nome)
